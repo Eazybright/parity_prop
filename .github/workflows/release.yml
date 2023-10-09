@@ -11,9 +11,8 @@ jobs:
         id: release
         with:
           release-type: ruby
-          package-name: contrived_math
+          package-name: parity_prop
           bump-minor-pre-major: true
-          version-file: "lib/release/contrived_math/version.rb"
       # Checkout code if release was created
       - uses: actions/checkout@v2
         if: ${{ steps.release.outputs.release_created }}
