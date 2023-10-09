@@ -1,33 +1,21 @@
 name: Release
+
 on:
-  push:
-    branches:
-      - "main" # main only
+  release:
+    types: [published]
+
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v2
-        id: release
-        with:
-          release-type: ruby
-          package-name: parity_prop
-          bump-minor-pre-major: true
-      # Checkout code if release was created
-      - uses: actions/checkout@v2
-        if: ${{ steps.release.outputs.release_created }}
-      # Setup ruby if a release was created
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
       - uses: ruby/setup-ruby@v1
         with:
-          # Not needed with a .ruby-version file
-          ruby-version: 2.7
-          # runs 'bundle install' and caches installed gems automatically
-          bundler-cache: true
-        if: ${{ steps.release.outputs.release_created }}
+          ruby-version: 2.7 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Run tests
         run: rake
-        if: ${{ steps.release.outputs.release_created }}
-      # Publish
       - name: publish gem
         run: |
           mkdir -p $HOME/.gem
