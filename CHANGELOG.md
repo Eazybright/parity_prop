@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.3](https://www.github.com/Eazybright/parity_prop/compare/v0.0.2...v0.0.3) (2023-10-09)
+
+
+### Bug Fixes
+
+* update release file ([02f5888](https://www.github.com/Eazybright/parity_prop/commit/02f58885d3d0038a177c0859be1b0ddb5fe988af))
+
 ### [0.0.2](https://www.github.com/Eazybright/parity_prop/compare/v0.0.1...v0.0.2) (2023-10-09)
 
 
