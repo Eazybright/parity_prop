@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.4](https://www.github.com/Eazybright/parity_prop/compare/v0.0.3...v0.0.4) (2023-10-09)
+
+
+### Bug Fixes
+
+* update gem version to 0.0.5 ([640d9b5](https://www.github.com/Eazybright/parity_prop/commit/640d9b5534e807d035f60fa4fb26410f30c279a1))
+
 ### [0.0.3](https://www.github.com/Eazybright/parity_prop/compare/v0.0.2...v0.0.3) (2023-10-09)
 
 
