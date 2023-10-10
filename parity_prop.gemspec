@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
     spec.files = Dir['lib/**/*.rb']
     spec.name = "parity_prop_eazybright"
     spec.summary = "A gem that returns an array of integers based on parity"
-    spec.version = "0.0.10"
+    spec.version = "0.0.12"
     spec.license = "MIT"
     spec.homepage = "https://github.com/Eazybright/parity_prop.git"
 end
